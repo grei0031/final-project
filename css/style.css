@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERUC STYLES */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;  
+    line-height: 1.5;
+    color: #000000;
+    background: white;
+     /* 1rem = 14px */
+}
+
+h1 { 
+    font-size: 71px;
+    line-height: 106px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+h2 { 
+    font-size: 48px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+p { 
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    padding: 0;
+}
+
+/* nav style */
+nav {
+    background-color: #222222;
+    color: #c78b07; 
+}
+
+nav a:link, 
+nav a:visited {
+    display: block;
+    text-align: center; 
+    color: #c78b07; 
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 17px; 
+    text-decoration: none;
+}
+
+
+nav form {
+    display: flex; 
+    flex-grow: 100;
+}
+
+header nav form input {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+header nav form button {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #c78b07;
+    color: #c78b07;
+    padding: 0;
+}
+
+.logo {
+    background-color:#c78b07;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+    background-color: #c78b07;
+    color: #000000;
+}
+
+/* welcome section css */
+
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 68px;
+padding-bottom: 68px; 
+}
+
+.header-welcome .container {
+background-color: rgba(0, 0, 0, 0.5);
+color: white; 
+padding-top: 50px;
+}
+
+.header-welcome button {
+    padding: 1.5em; 
+    background-color: #c78b07;
+    color: #000000;
+    font-size: 20px;
+}
+/*about*/
+.container-about {
+    background-color:#ffe6ac;
+    padding: 1rem;
+}
+
+/* TABLE STYLE NEED TO MOVE AND CHANGE
+.contact table tr th {
+    background: #ffe6ac;
+    border-bottom: 1px solid black;
+} BUTTON ONE UNDERNEATH NEEDS TO MOVE
+*/
+button {
+    padding: 1.5rem;
+    background-color: #222222;
+    color: white;
+}
+
+/*services*/
+
+.section-services h3 {
+    font-size: 40px;
+    font-style: bold;
+
+}
+
+.container-services {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.container-services img {
+width: 100%;
+}
+
+/* video */
+
+.container-video {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.container-video img {
+    width: 100%;
+}
+
+/* web */
+
+.container-web {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.container-web img {
+    width: 100%;
+}
+
+.container-print {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.container-map iframe{
+    width: 100%;
+}
+
+.container-marketing {
+    background-color: #ffe6ac;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.container-marketing img{
+    width: 100%;
+}
+
+.container-vision {
+    position: relative;
+    text-align: center;
+}
+
+.grid-vision {
+    display: grid;
+}
+
+
+
+.centered {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+}
+
+/*team*/ 
+
+
+.team-grid {
+    background-color:#ffe6ac
+}
+  
+
+.team-grid h3, .team-grid h4, .team-grid p {
+    background-color: #ffe6ac;
+}
+/*form*/
+
+form {
+    border: none;
+
+}
+
+/*.section-form {
+    border: 2px solid black;
+    border-radius: 4px;  */
+
+form fieldset input {
+    width: 100%;
+    border: 10px 10px 10px;
+}
+
+form fieldset textarea {
+    height: 150px;
+    width: 100%;
+}
+
+form button {
+    color: #c78b07;
+    font-size: 20px;
+}
+
+/*hours*/
+table tr th {
+    background-color:#ffe6ac;
+    padding: 15px;
+    width: 100%;
+}
+
+table tr td {
+    padding: 15px;
+    line-height: 15px;
+}
+
+
+/*footer*/ 
+
+footer {
+    background-color: #222222;
+    color:#c78b07;
+    padding: 15px;
+}
+
+/* 
+desktop styles
+===================================== */
+
+/* divide desktop layout template by two as well for accurate measurements */
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1172px;
+        margin: 0 auto;
+    }
+
+} 
+    
+
+
+/* 
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
+
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
+/* DESKTOP STYLES: ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    /* ALL YOUR DESKTOP STYLES HERE */
+
+.section-services {
+display: grid;
+grid-column: 1fr 1fr 1fr;
+grid-row: 1fr 1fr;
+}
+
+.section-services .grid-services:nth-child(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+}
+
+
+.section-services .grid-services:nth-child(2) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+}
+
+
+
+}
